@@ -1,0 +1,16 @@
+// inicial app
+criar o codigo inicial
+npm init 
+
+//Instalar o yarn 
+npm install -g 
+
+//Instalar os app que precisa.  
+yarn add express morgan
+
+//Instalar nodemon  ele escuta o servidor e atualizar
+npm install nodemon
+
+//instalar mongoose 
+
+yarn add mongoose
