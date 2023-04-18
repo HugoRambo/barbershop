@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AddCannedAc1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::683111263411:user/hugorambo18"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::barbershop2023/*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:x-amz-acl": "public-read"
+                }
+            }
+        }
+    ]
+}

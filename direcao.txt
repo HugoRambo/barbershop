@@ -14,3 +14,5 @@ npm install nodemon
 //instalar mongoose 
 
 yarn add mongoose
+
+yarn add connect-busboy busboy-body-parser aws-sdk

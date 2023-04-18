@@ -10,6 +10,10 @@
   "author": "Hugo_Rambo <hugo.rambo@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.1360.0",
+    "busboy": "^1.6.0",
+    "busboy-body-parser": "^0.3.2",
+    "connect-busboy": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongodb": "^5.2.0",
