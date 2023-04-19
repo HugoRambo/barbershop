@@ -10,6 +10,7 @@
   "author": "Hugo_Rambo <hugo.rambo@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@turf/turf": "^6.5.0",
     "aws-sdk": "^2.1360.0",
     "busboy": "^1.6.0",
     "busboy-body-parser": "^0.3.2",

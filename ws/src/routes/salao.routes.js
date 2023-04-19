@@ -2,7 +2,8 @@ const express = require('express')
 const router = express.Router()
 const Salao = require('../models/salao')
 const Servico = require('../models/servico')
-
+const turf = require('@turf/turf')
+const util= require('../util')
 router.post('/', async(req, res ) => {
     try{
         //Recebo esse salao
@@ -30,5 +31,23 @@ router.get('/servicos/:salaoId', async(req, res) => {
     }
 })
 
+//datos de um salao pelo id dele
+router.get('/:id', async(req, res) =>{
+    try{
+        const salao = await Salao.findById(req.params.id).select('capa nome endereco.cidade geo.coordinates telefone')
+        
+        //DISTANCIA
+        const distance = turf.distance(
+            turf.point(salao.geo.coordinates),
+            //cordenada da onde ta o salao
+            turf.point([-25.4679018, -54.5864170])
+        )
+
+
+        res.json({error: false, salao, distance})
+    }catch(err){
+        res.json({error: true, message: err.message})
+    }
+})
 
 module.exports = router
