@@ -16,3 +16,6 @@ npm install nodemon
 yarn add mongoose
 
 yarn add connect-busboy busboy-body-parser aws-sdk
+
+
+parado no minuto 40 

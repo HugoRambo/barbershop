@@ -3,7 +3,7 @@ const router = express.Router()
 const Salao = require('../models/salao')
 const Servico = require('../models/servico')
 const turf = require('@turf/turf')
-const util= require('../util')
+
 router.post('/', async(req, res ) => {
     try{
         //Recebo esse salao
