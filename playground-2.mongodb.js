@@ -25,7 +25,7 @@ db.getCollection('sales').insertMany([
 ]);
 
 // Run a find command to view items sold on April 4th, 2014.
-const salesOnApril4th = db.getCollection('sales').find({ DdKNZHtFxG
+const salesOnApril4th = db.getCollection('sales').find({
   date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
 }).count();
 
