@@ -17,7 +17,7 @@ db.createCollection(collection);
     capped: <boolean>,
     autoIndexId: <boolean>,
     size: <number>,
-    max: <number>,
+    max: <number>, rykLzh3VvL
     storageEngine: <document>,
     validator: <document>,
     validationLevel: <string>,
