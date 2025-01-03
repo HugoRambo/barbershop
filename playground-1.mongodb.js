@@ -25,7 +25,7 @@ db.createCollection(collection);
     indexOptionDefaults: <document>,
     viewOn: <string>,
     pipeline: <pipeline>,
-    collation: <document>, UmZSujJ7gz
+    collation: <document>,
     writeConcern: <document>,
     timeseries: { // Added in MongoDB 5.0
       timeField: <string>, // required for time series collections
